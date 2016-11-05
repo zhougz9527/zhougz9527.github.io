@@ -241,7 +241,7 @@
               
                 
                 <a class="post-title-link" href="/2016/11/05/一个晚上搭建博客--基于Github Pages和Hexo的教程/" itemprop="url">
-                  1个小时搭建博客--基于Github Pages和Hexo的教程
+                  Windows下基于Github Pages和Hexo搭建博客教程
                 </a>
               
             
@@ -284,7 +284,85 @@
       
         
           
-            <p>手机赶紧的施工方科技的帅哥开房大厦的时间给房东说顾客是否撒娇的房价快速大幅看见爱上对方空间撒房价肯定撒回复看见好的撒放空间的撒谎发快乐多撒谎发</p>
+            <p>　　这个博客是昨晚刚刚搭建起来的，趁着这个热乎劲梳理一下博客的搭建过程。<br>首先简单的描述一下大体的流程：</p>
+<ol>
+<li>安装Git、Node.js、Hexo；</li>
+<li>利用Hexo创建本地静态博客；</li>
+<li>然后将本地的静态博客挂在Github Pages上；</li>
+</ol>
+<p>　　是不是觉得很简单啊，那让我们开始吧。</p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>登录官网下载 <a href="http://code.google.com/p/msysgit/" title="git" target="_blank" rel="external">git</a>，登录官网需要翻墙，如果你登不上去的那就下载这个 <a href="http://pan.baidu.com/s/1i4xAM9Z" target="_blank" rel="external">http://pan.baidu.com/s/1i4xAM9Z</a> 安装时一路默认就可以了，环境变量会自动配置的。在桌面右击有显示Git Bash Here 就说明安装成功了，打开git也是右击选中Git Bash Here。如果想进一步了解Git的话，移步<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">Git 教程</a>。</p>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>安装Node.js就更加简单了。在官网<a href="https://nodejs.org/en/download/" title="Node.js" target="_blank" rel="external">Node.js</a>中选择（.msi）就可以了.直接安装不用配置环境变量。</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Hexo</p>
+<blockquote>
+<p>Hexo 是一个快速、简洁且高效的博客框架。 Hexo 使用Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页</p>
+</blockquote>
+<h3 id="一、Hexo安装"><a href="#一、Hexo安装" class="headerlink" title="一、Hexo安装"></a>一、Hexo安装</h3><p>安装Hexo    不需要安装包，利用刚刚安装好的Git输入命令行就可以进行安装。桌面右击鼠标，点击Git Bash Here，输入npm命令行即可安装</p>
+<pre><code>$ npm install hexo-cli -g
+$ npm install hexo --save
+</code></pre><h3 id="二、Hexo初始化"><a href="#二、Hexo初始化" class="headerlink" title="二、Hexo初始化"></a>二、Hexo初始化</h3><p>安装完成后，在电脑里新建目录（如：D:\Blog）,在Blog目录下右击鼠标点击Git Bash Here，执行</p>
+<pre><code>$ hexo init
+$ npm install
+</code></pre><p>安装Hexo完成后，Blog目录下将会创建：</p>
+<p><img src="http://og5j7kmyd.bkt.clouddn.com/hexo%E6%88%AA%E5%9B%BE.png" alt=""></p>
+<p>安装Hexo插件</p>
+<p><img src="http://og5j7kmyd.bkt.clouddn.com/hexo%E6%88%AA%E5%9B%BE02.png" alt=""></p>
+<p>执行下面语句，然后登陆localhost:4000查看效果</p>
+<p><img src="http://og5j7kmyd.bkt.clouddn.com/hexo%E6%88%AA%E5%9B%BE03.png" alt=""></p>
+<h2 id="三、将本地博客部署到Github-Pages上"><a href="#三、将本地博客部署到Github-Pages上" class="headerlink" title="三、将本地博客部署到Github Pages上"></a>三、将本地博客部署到Github Pages上</h2><p>博客部署到Github Pages上，这样别人也可以通过你的yourname.github.io这个的地址访问到你了。当然你想买个有个性的也是可以在阿里云上购买的。</p>
+<h3 id="一、注册Github"><a href="#一、注册Github" class="headerlink" title="一、注册Github"></a>一、注册Github</h3><p>Github官网：<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>这个官网可能是要翻墙的,如果你现在还不会翻墙的话…</p>
+<p><img src="http://og5j7kmyd.bkt.clouddn.com/hexo%E8%A1%A8%E6%83%8501.jpg" alt=""></p>
+<p>走你—&gt;<a href="https://laod.cn/hosts/2016-google-hosts.html" target="_blank" rel="external">老D博客</a>，安照教程里面的步骤修改hosts文件，就能翻墙了。如果修改hosts文件还是登录不了Github的话…你既然看到这里了，那我怎么也得让你翻出去呀。再走你—&gt;<a href="https://pan.baidu.com/s/1hrEO4Yw" target="_blank" rel="external">Chrome一键翻墙包</a>，解压后阅读使用文档即可。</p>
+<h3 id="二、创建项目代码库"><a href="#二、创建项目代码库" class="headerlink" title="二、创建项目代码库"></a>二、创建项目代码库</h3><p>按图操作</p>
+<p><img src="http://og5j7kmyd.bkt.clouddn.com/hexo%E6%88%AA%E5%9B%BE05.png" alt=""></p>
+<p><img src="http://og5j7kmyd.bkt.clouddn.com/hexo%E6%88%AA%E5%9B%BE06.png" alt=""></p>
+<h3 id="三、配置SSH秘钥"><a href="#三、配置SSH秘钥" class="headerlink" title="三、配置SSH秘钥"></a>三、配置SSH秘钥</h3><blockquote>
+<p>配置Github的SSH密钥可以让本地git项目与远程的github建立联系，让我们在本地写了代码之后直接通过git操作就可以实现本地代码库与Github代码库同步</p>
+</blockquote>
+<p>第一步：首先查看本机是否存在秘钥，在刚刚创建的Blog的目录下执行</p>
+<pre><code>$ cd ~/.ssh
+</code></pre><p>如果没显示什么，就是说明不存在。那就进行第二步，如果存在的话就直接进行第三步。</p>
+<p>第二步：</p>
+<pre><code>$ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
+</code></pre><p>接着按照提示输入密码和确密码，但是可以按回车不设置密码。我就没有设置密码…<br>提示如下：</p>
+<pre><code>Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
+</code></pre><p>等一会后你就会看到与这个差不多的信息：</p>
+<pre><code>Your identification has been saved in /c/Users/you/.ssh/id_rsa.
+Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.The 
+key fingerprint is:
+01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
+</code></pre><p>第三步：先运行下面的命令,在把公钥内容粘贴到Github用户上面的Setting里面的SSH keys的这个界面</p>
+<p><img src="http://og5j7kmyd.bkt.clouddn.com/hexo%E6%88%AA%E5%9B%BE07.png" alt=""></p>
+<p>第四步：检测是否成功</p>
+<p>可以输入下面的命令，看看设置是否成功：</p>
+<pre><code>$ ssh -T git@github.com
+</code></pre><p>如果等到的是这个结果的话：</p>
+<pre><code>The authenticity of host &apos;github.com (207.97.227.239)&apos; can&apos;t be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)?
+</code></pre><p>那就对了，现在你不要按回车，直接输入yes即可。然后出现这个：</p>
+<pre><code>Hi cnfeat! You&apos;ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre><p>那就可以了。</p>
+<p>第五步：设置用户信息</p>
+<blockquote>
+<p>现在你已经可以通过SSH链接到GitHub了，还有一些个人信息需要完善的。 Git会根据用户的名字和邮箱来记录提交。GitHub也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的，名字必须是你的真名，而不是GitHub的昵称。</p>
+</blockquote>
+<p>这个是别人的教程说明，但是user.name输入注册邮箱最好，要不然会出现一些不必要的问题。执行命令行</p>
+<pre><code>$ git config --global user.name &quot;cnfeat&quot;//用户名
+$ git config --global user.email  &quot;cnfeat@gmail.com&quot;//填写自己的邮箱
+</code></pre><h2 id="四、将本地的Hexo挂到Github上"><a href="#四、将本地的Hexo挂到Github上" class="headerlink" title="四、将本地的Hexo挂到Github上"></a>四、将本地的Hexo挂到Github上</h2><p>按图操作</p>
+<p><img src="http://og5j7kmyd.bkt.clouddn.com/hexo%E6%88%AA%E5%9B%BE08.png" alt=""></p>
+<p><img src="http://og5j7kmyd.bkt.clouddn.com/hexo%E6%88%AA%E5%9B%BE09.png" alt=""></p>
+<p>打开Blog文件夹（这个图的网络上的）</p>
+<p><img src="http://og5j7kmyd.bkt.clouddn.com/hexo%E6%88%AA%E5%9B%BE10.png" alt=""></p>
+<p><img src="http://og5j7kmyd.bkt.clouddn.com/hexo%E6%88%AA%E5%9B%BE11.png" alt=""></p>
+<p>在Blog文件夹下执行</p>
+<pre><code>hexo g -d
+</code></pre><p>执行完之后会让你输入github的账号和密码，输入完后就可以登录我们自己的部署在Github Pages服务器上的博客了。对应的地址是 username.github.io(我的是：zhougz9527.github.io)。</p>
+<p>最后，在浏览器上输入username.github.io就可以访问了。</p>
+<p><img src="http://og5j7kmyd.bkt.clouddn.com/hexo%E6%88%AA%E5%9B%BE12.png" alt=""></p>
+<p>这个主题是hexo的默认的主题，如果你想进行私人订制的话可以访问：<a href="https://hexo.io/themes/" target="_blank" rel="external">Hexo主题官网</a></p>
 
           
         
